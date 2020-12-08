@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Store } from '@ngrx/store';
 import { AppState } from '../../app.state';
-import { increment, decrement } from '../counter.action';
+import { increment, decrement } from './counter.actions';
 
 @Component({
     selector: 'app-counter',
