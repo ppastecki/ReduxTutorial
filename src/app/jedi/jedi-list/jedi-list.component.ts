@@ -17,7 +17,7 @@ export class JediListComponent {
   newJediName = "";
 
   constructor(private store: Store<AppState>) {
-    this.jedis$ = store.select<Array<Jedi>>(store => store.jedis);
+    this.jedis$ = store.select<Array<Jedi>>(store => store.jedi.jedis);
   }
 
   add() {
