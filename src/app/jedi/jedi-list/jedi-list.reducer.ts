@@ -1,4 +1,4 @@
-import { ActionPayload } from '../../interfaces';
+import { ActionPayload } from '../../app.models';
 import { ADD_JEDI, REMOVE_JEDI, LOAD_JEDIS } from './jedi-list.constants';
 
 export function jediListReducer(state = [], action: ActionPayload<any>) {

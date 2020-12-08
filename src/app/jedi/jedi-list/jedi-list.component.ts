@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 
 import { AppState } from '../../app.state';
 import { addJedi, removeJedi, loadJedis } from './jedi-list.actions';
-import { Jedi } from '../jedi.model';
+import { Jedi } from '../jedi.models';
 
 @Component({
   selector: 'app-jedi-list',
