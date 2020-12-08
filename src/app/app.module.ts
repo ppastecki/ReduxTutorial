@@ -2,9 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { StoreModule } from '@ngrx/store';
 
-import { AppComponent } from './app.component';
 import { CounterModule } from './counter/counter.module';
+import { JediModule } from './jedi/jedi.module';
+
+import { AppComponent } from './app.component';
 import { counterReducer } from './counter/counter.reducer';
+import { jediListReducer } from './jedi/jedi-list/jedi-list.reducer';
 
 @NgModule({
   declarations: [
@@ -13,9 +16,11 @@ import { counterReducer } from './counter/counter.reducer';
   imports: [
     BrowserModule,
     StoreModule.forRoot({
-      counter: counterReducer
+      counter: counterReducer,
+      jedis: jediListReducer
     }),
-    CounterModule
+    CounterModule,
+    JediModule
   ],
   providers: [],
   bootstrap: [AppComponent]
