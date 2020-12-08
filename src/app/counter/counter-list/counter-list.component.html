@@ -1,0 +1,8 @@
+<div>
+    <input type="text" [(ngModel)]="newCounterName">
+    <button click="add()">Add</button>
+</div>
+<div *ngFor="let counter of counters$ | async">
+    {{ counter.title }}
+    <button (click)="remove(counter.id)">Remove</button>
+</div>
